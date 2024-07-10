@@ -1,3 +1,4 @@
+import Expolre from "./components/Expolre"
 import Header from "./components/Header"
 
 function App() {
@@ -5,6 +6,7 @@ function App() {
   return (
     <main className="main">
       <Header />
+      <Expolre />
     </main>
   )
 }
