@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+}
+
+/* header */
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+.header img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.header__content {
+  position: relative;
+  margin: auto;
+}
+
+.header__content-text {
+  width: 548px;
+  margin-top: 92px;
+  padding-right: 20px;
+  color: white;
+}
+.header__content-text h1 {
+  margin: 20px 0;
+  font-size: 4.5rem;
+}
+.header__content-text p {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.header__content-text button {
+  margin: 35px 0 30px;
+}
+
+.header__content img {
+  position: absolute;
+  right: 0;
+  margin: 115px 0 0 auto;
+  width: auto;
+  z-index: -1;
+}
+
+.header__content-advantages {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 74px;
+  margin-bottom: 32px;
+}
+
+.advantage div {
+  display: flex;
+  flex-direction: column;
+  width: 336px;
+  height: 302px;
+  margin: 34px 12px;
+  padding: 48px 20px;
+  background-color: #fff;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.25);
+}
+.advantage h3 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+.advantage-1 h3 {
+  color: #3a0e63;
+}
+.advantage-2 h3 {
+  color: #c04a87;
+}
+.advantage-3 h3 {
+  color: #7145e0;
+}
+.advantage p {
+  margin-top: 24px;
+  margin-bottom: 30px;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+.advantage span {
+  height: 36px;
+  width: 36px;
+}
+.advantage svg {
+  transform: rotate(180deg);
+  width: 100%;
+  height: 100%;
+  fill: #281c31;
+}
+
+/* UI */
+
+.button {
+  padding: 16px 54px 16px 53px;
+  
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 50px;
+
+  color: white;
+  letter-spacing: 2px;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  font-family: inherit;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+.button:hover {
+  color: #281c31 !important;
+  background-color: white !important;
+}
