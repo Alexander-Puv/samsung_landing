@@ -16,6 +16,16 @@ p {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Ubuntu", sans-serif;
 }
+h3 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+h4 {
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 1.5rem;
+}
 
 .main {
   width: 100%;
@@ -33,6 +43,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   width: 100%;
+  overflow: hidden;
   z-index: -1;
 }
 
@@ -85,11 +96,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 48px 20px;
   background-color: #fff;
   box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.25);
-}
-.advantage h3 {
-  font-size: 2.25rem;
-  font-weight: 700;
-  line-height: 1.1;
 }
 .advantage-1 h3 {
   color: #3a0e63;
@@ -151,13 +157,59 @@ h1, h2, h3, h4, h5, h6 {
 .category img {
   height: 350px;
   object-fit: contain;
-  background-size: contain;
 }
 .category h4 {
   margin: 45px 20px;
-  font-weight: 700;
-  line-height: 1.2;
-  font-size: 1.5rem;
+}
+
+/* connect */
+
+.connect {
+  position: relative;
+}
+
+.connect__image {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 714px;
+  margin-top: 262px;
+  object-fit: cover;
+  object-position: 80% 23.8%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.connect__content {
+  min-height: 976px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.connect__content h3 {
+  margin: 73px 0 61px;
+  padding: 31px 60px;
+}
+
+.connect__items {
+  width: 946px;
+  display: flex;
+  justify-content: center;
+}
+.connect__item {
+  padding: 0 25px;
+  flex: 0 0 50%;
+  max-width: 50%;
+  text-align: center;
+  padding-bottom: 42px;
+}
+.connect__item img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.connect__item h4 {
+  margin: 43px 0 30px;
 }
 
 /* UI */
@@ -241,7 +293,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* screen size */
 
-
 @media (max-width: 1199px) {
   .explore {
     width: 940px;
@@ -254,6 +305,10 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 991px) {
   .explore {
+    width: 720px;
+  }
+
+  .connect__items {
     width: 720px;
   }
 
@@ -272,6 +327,15 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 767px) {
   .explore {
     width: 540px;
+  }
+
+  .connect__items {
+    width: 540px;
+    flex-direction: column;
+  }
+  .connect__item {
+    flex: 1;
+    max-width: 100%;
   }
 
   .product {
@@ -293,6 +357,10 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 575px) {
   .explore {
+    width: 340px;
+  }
+
+  .connect__items {
     width: 340px;
   }
 
