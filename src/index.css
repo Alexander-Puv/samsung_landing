@@ -318,6 +318,62 @@ body {
   }
 }
 
+/* gearIconX */
+
+.gearIconX {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+}
+.gearIconX p {
+  width: 869px;
+  margin: 20px auto 33px;
+}
+.gearIconX img {
+  width: 754px;
+  height: 566px;
+  margin: 0 auto;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+@media (max-width: 1199px) {
+  .gearIconX p {
+    width: 716px;
+  }
+  .gearIconX img {
+    width: 621px;
+  }
+}
+@media (max-width: 991px) {
+  .gearIconX p {
+    width: 549px;
+  }
+  .gearIconX img {
+    width: 476px;
+  }
+}
+@media (max-width: 767px) {
+  .gearIconX p {
+    width: 514px;
+  }
+  .gearIconX img {
+    width: 446px;
+  }
+}
+@media (max-width: 575px) {
+  .gearIconX p {
+    padding: 0 10px;
+    width: auto;
+  }
+  .gearIconX img {
+    height: 325px;
+  }
+}
+
 /* UI */
 
 /* button */
