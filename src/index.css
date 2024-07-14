@@ -374,6 +374,45 @@ body {
   }
 }
 
+/* footer */
+
+footer {
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 35px 0;
+}
+footer h3 {
+  font-size: 1.875rem;
+  margin: 30px 60px;
+}
+footer button {
+  margin: 40px 140px;
+  white-space: nowrap;
+}
+
+@media (max-width: 991px) {
+  footer button {
+    margin-left: 30px;
+    margin-right: 60px;
+  }
+}
+@media (max-width: 767px) {
+  footer {
+    flex-direction: column;
+  }
+}
+@media (max-width: 575px) {
+  footer h3 {
+    margin: 10px;
+  }
+  footer button {
+    margin-bottom: 0;
+  }
+}
+
 /* UI */
 
 /* button */
@@ -395,9 +434,17 @@ body {
 
   cursor: pointer;
 }
+.button-black {
+  border-color: black;
+  color: black;
+}
 .button:hover {
   color: #281c31 !important;
   background-color: white !important;
+}
+.button-black:hover {
+  color: white !important;
+  background-color: black !important;
 }
 
 /* product */
